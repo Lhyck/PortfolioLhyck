@@ -1,0 +1,205 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #191a19;
+}
+
+section {
+    display: block;
+}
+
+img {
+    background: linear-gradient(90deg, transparent, #4E9F3D);
+}
+
+header nav {
+    background: #191a19;
+    border-bottom: solid #4E9F3D 10px;
+}
+
+header nav ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+header nav ul li {
+    padding: 0px;
+    margin: 1px 1px 0px 1px;
+    background: #d8e9A8;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.slider img {
+    width: 100px;
+    height: 50px;
+    list-style: none;
+}
+
+.slider li {
+    display: table-cell;
+    padding: 10px;
+}
+
+.slider ul {
+    position: absolute;
+    animation-name: slider;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes slider {
+    0% {
+        left: 0px;
+    }
+    25% {
+        left: -800px;
+    }
+    50% {
+        left: -1600px;
+    }
+    75% {
+        left: 0px;
+    }
+    100% {
+        left: 0px;
+    }
+}
+
+.btn-neon {
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    color: #fff;
+    letter-spacing: 4px;
+    font-size: 24px;
+    text-decoration: none;
+    overflow: hidden;
+    transition: 0.2s;
+}
+
+.btn-neon:hover {
+    background: #4E9F3D;
+    box-shadow: 0 0 10px #4E9F3D, 0 0 40px #4E9F3D, 0 0 80px #4E9F3D;
+    transition-delay: 1s;
+}
+
+.btn-neon span {
+    position: absolute;
+    display: block;
+}
+
+#span1 {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #4E9F3D);
+}
+
+.btn-neon:hover #span1 {
+    left: 100%;
+    transition: 1s;
+}
+
+#span3 {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #4E9F3D);
+}
+
+.btn-neon:hover #span3 {
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+
+#span2 {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #4E9F3D);
+}
+
+.btn-neon:hover #span2 {
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+
+#span4 {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #4E9F3D);
+}
+
+.btn-neon:hover #span4 {
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+
+.avat {
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    color: #fff;
+    letter-spacing: 4px;
+    font-size: 24px;
+    text-decoration: none;
+    overflow: hidden;
+    transition: 1s;
+    background: #4E9F3D;
+    box-shadow: 0 0 10px #4E9F3D, 0 0 40px #4E9F3D, 0 0 80px #4E9F3D;
+}
+
+
+/* agregado*/
+
+.avat {
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    margin: 30px;
+    margin-left: 500px;
+    color: #fff;
+    letter-spacing: 4px;
+    font-size: 24px;
+    text-decoration: none;
+    overflow: hidden;
+    transition: 1s;
+    background: #4E9F3D;
+    box-shadow: 0 0 10px #4E9F3D, 0 0 40px #4E9F3D, 0 0 80px #4E9F3D;
+}
+
+.clase1 {
+    color: #4E9F3D;
+    margin-left: 200px;
+    font-size: 35px;
+}
+
+.clase2 {
+    color: #d8e9A8;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-left: 100px;
+    margin-right: 100px;
+    list-style-type: circle;
+}
+
+.clase3 {
+    color: #4E9F3D;
+    font-size: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-left: 300px;
+}
